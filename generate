@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+(cd `dirname $0`
+	mkdir -p project
+	(cd project
+		cmake -G "Visual Studio 8 2005" ../source
+	)
+)

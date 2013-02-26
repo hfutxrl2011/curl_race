@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+(cd `dirname $0`
+	runcom devenv project/curl_race.sln /Build Debug
+	runcom devenv project/curl_race.sln /Build Release
+)
